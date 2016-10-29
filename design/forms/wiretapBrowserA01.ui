@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>726</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>0</y>
+     <width>401</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Node</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Type</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>stonefs6</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>INGEST</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Lib1</string>
+      </property>
+     </item>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>stonefs7</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>INGEST</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Lib1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Lib2</string>
+      </property>
+     </item>
+    </item>
+   </item>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>311</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>IFFFS Server</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Version</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>User</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>Vid_WS17</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>2012</string>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="text">
+     <string>Andrew Britton</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>Vid_WS90</string>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="text">
+     <string>2014</string>
+    </property>
+   </item>
+   <item row="1" column="2">
+    <property name="text">
+     <string>Joe Schmoe</string>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>Vid_WS91</string>
+    </property>
+   </item>
+   <item row="2" column="1">
+    <property name="text">
+     <string>2015</string>
+    </property>
+   </item>
+   <item row="2" column="2">
+    <property name="text">
+     <string>Jenny Smith</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>201</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Server Exclusions</string>
+   </property>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Burns</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Macs</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>420</y>
+     <width>661</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Node ID</string>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>450</y>
+     <width>156</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
