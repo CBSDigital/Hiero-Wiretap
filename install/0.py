@@ -7,7 +7,11 @@
          into hiero.plugins.  The script loading priority is given to filenames
          beginning with numbers, capital letters, underscores, and finally
          lower case letters.
-         
+
+@note Place this file in a Python/Startup folder on the HIERO_PLUGIN_PATH.  The
+      Wiretap project folder can now be stored separately in the parent
+      directory next to the Startup and StartupUI folders.
+
 @author Brendan Holt
 @date December 2013
 
