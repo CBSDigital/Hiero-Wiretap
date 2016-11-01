@@ -5,6 +5,12 @@ Developed by Brendan A. Holt and Andrew D. Britton
 Software Development Department  
 CBS Digital
 
+## Legal Information
+HIERO is a registered trademark of The Foundry Visionmongers, Ltd.  
+Wiretap is a registered trademark of Autodesk, Inc.
+
+CBS Digital has developed this tool independently of The Foundry and Autodesk and released the source code under a permissive license. The software is provided as-is with no warranty of any kind. Proper attribution to CBS Digital and the original authors must be preserved in this readme file and in the source code. See the license file for more details.
+
 ## Overview
 Hiero<>Wiretap is a plugin for The Foundry’s HIERO that allows the user to export selected shots in the timeline to a library or reel on an Autodesk IFFFS server (Stone FS). Many standard VFX formats are supported via Wiretap Gateway, including Apple ProRes and DPX/EXR image sequences.
 
@@ -26,9 +32,3 @@ Hiero<>Wiretap was originally created for Hiero 1.8 and Flame 2012&mdash;it will
 
 ## Future Development
 Due to other priorities, CBS Digital has ceased development on Hiero<>Wiretap. Autodesk has since improved their documentation on Open Clip files and introduced new Python hooks with the advent of Shotgun/Flame integration. These technologies provide other avenues for accessing conformed shots in Flame. Regardless, the visual effects community may find aspects of this project useful. If so, we hope that those parties will share their findings.
-
-## Legal Information
-HIERO is a registered trademark of The Foundry Visionmongers, Ltd.  
-Wiretap is a registered trademark of Autodesk, Inc.
-
-CBS Digital has developed this tool independently of The Foundry and Autodesk and released the source code under a permissive license. The software is provided as-is with no warranty of any kind. See the license file for more details.
