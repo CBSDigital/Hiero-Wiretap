@@ -21,6 +21,9 @@ A custom shot processor that works in tandem with the Stonify task and provides 
 ### Wiretap Browser
 A window for browsing Wiretap server trees and selecting a destination library or reel for the new clip.
 
+## Dependencies
+Hiero<>Wiretap was originally created for Hiero 1.8 and Flame 2012&mdash;it will probably need some work to get the Wiretap Shot Processor up and running in Hiero/Nuke Studio 10.x. Also, the Wiretap 2017 Python bindings may need to be recompiled (with Boost) if for some reason the binaries aren't compatible with either Nuke 10.x or the system's Python.
+
 ## Future Development
 Due to other priorities, CBS Digital has ceased development on Hiero<>Wiretap. Autodesk has since improved their documentation on Open Clip files and introduced new Python hooks with the advent of Shotgun/Flame integration. These technologies provide other avenues for accessing conformed shots in Flame. Regardless, the visual effects community may find aspects of this project useful. If so, we hope that those parties will share their findings.
 
