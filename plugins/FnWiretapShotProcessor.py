@@ -14,10 +14,9 @@ from hiero.exporters.FnShotProcessor import ShotProcessor, ShotProcessorPreset
 import hiero.ui
 from PySide import QtCore, QtGui
 
-from CBSD import Path
+import Path
 import FnStonify
 import FnWiretapShotProcessorUI
-import LogFileGeneration
 from WiretapBrowser import ChooseContainerNode
 from WiretapTools import SplitHostname
 
@@ -102,7 +101,6 @@ class WiretapShotProcessor(ShotProcessor):
                                as a \c{hiero.core.ItemWrapper} instance.
         
         """
-        #LogFileGeneration.UpdateRunCounter('WiretapShotProcessor')
         super(WiretapShotProcessor, self).startProcessing(exportItems)
     
     def validate(self, exportItems):
@@ -152,7 +150,7 @@ class WiretapShotProcessor(ShotProcessor):
             result = msgBox.information(
                 None, "Export",
                 "The following items will be ignored by this export:<br/>%s"
-                %str("<br/>".join(invalidItems)),
+                % str("<br/>".join(invalidItems)),
                 QtGui.QMessageBox.Ok | QtGui.QMessageBox.Cancel)
             # Continue if user clicks OK
             return result == QtGui.QMessageBox.Ok

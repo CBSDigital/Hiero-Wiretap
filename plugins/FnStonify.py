@@ -18,7 +18,7 @@ from threading import Thread
 import hiero.core
 from hiero.core import Timecode  # only accessible when Hiero is running
 
-from CBSD import Path
+import Path
 from wiretap import WireTapException
 from WiretapBrowser import SplitNodePath
 from WiretapTools import SplitHostname
@@ -341,8 +341,8 @@ class StonifyTask(hiero.core.TaskBase):
                 frameRange = str(self.__start)
             else:  # only add range brackets if there is more than one frame
                 frameRange = '[{0}-{1}]'.format(
-                    self.filepadding() %self.__start,
-                    self.filepadding() %self.__end)
+                    self.filepadding() % self.__start,
+                    self.filepadding() % self.__end)
             
             parentPath = os.path.dirname(fileInfo.filename())
             clipName = (self.filehead() + frameRange +
